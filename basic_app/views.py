@@ -11,6 +11,7 @@ from django.views.generic import (
 									UpdateView,
 									DeleteView
 								)
+from django.views.generic.edit import FormView
 from django.http import HttpResponse
 from django.core.urlresolvers import reverse_lazy
 from . import models
@@ -35,7 +36,7 @@ class SchoolCreateView(CreateView):
 	template_name = 'basic_app/school_create.html'
 
 class SchoolUpdateView(UpdateView):
-	fields = ('name', 'principal')
+	fields = ('name', 'principal', 'picture')
 	model = models.School
 	template_name = 'basic_app/school_create.html'
 

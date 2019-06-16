@@ -6,6 +6,8 @@
 	<h2>Name: {{ school_detail.name }}</h2>
 	<h2>Principal: {{ school_detail.principal }}</h2>
 	<h2>Location: {{ school_detail.location }}</h2>
+	<img class="imageframe" src="..\..\media\{{ school_detail.picture }}"/>
+	<h2>What's here: ! {{ school_detail.picture }}<h2>
 	<h3>Students: </h3>
 	{% for student in school_detail.students.all %}
 		<p>{{student.name}} who is {{student.age}} years old.</p>

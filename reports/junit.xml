@@ -1,0 +1,5 @@
+<testsuite errors="0" failures="1" name="Django Project Tests" skips="0" tests="1" time="0.004"><testcase classname="basic_app.tests.SchoolModelTests" name="testCreateNewSchool" time="0.000000"><failure message="False is not True" type="exceptions.AssertionError">Traceback (most recent call last):
+  File "C:\Users\samje\Documents\WebProjects2\djangoenv\advcbv\basic_app\tests.py", line 20, in testCreateNewSchool
+    self.assertIs(lengthBefore==lengthAfter, True)
+AssertionError: False is not True
+</failure></testcase></testsuite>
